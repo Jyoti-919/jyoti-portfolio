@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Portfolio of Jyoti Malakar — aspiring Python developer and lifelong learner.">
+  <title>Jyoti Malakar | Portfolio</title>
+  <style>
+    :root {
+      --ink: #172033;
+      --muted: #5d687c;
+      --accent: #3457d5;
+      --accent-light: #edf1ff;
+      --line: #e5e9f2;
+      --paper: #ffffff;
+      --soft: #f7f8fc;
+    }
+    * { box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+    body {
+      margin: 0;
+      font-family: Inter, "Segoe UI", Arial, sans-serif;
+      color: var(--ink);
+      background: var(--paper);
+      line-height: 1.65;
+    }
+    a { color: var(--accent); text-decoration: none; }
+    a:hover { text-decoration: underline; }
+    .wrap { width: min(1060px, calc(100% - 40px)); margin: auto; }
+    header {
+      position: sticky; top: 0; z-index: 5;
+      background: rgba(255,255,255,.95);
+      border-bottom: 1px solid var(--line);
+      backdrop-filter: blur(10px);
+    }
+    nav { min-height: 68px; display: flex; align-items: center; justify-content: space-between; gap: 20px; }
+    .brand { font-weight: 800; letter-spacing: -.3px; color: var(--ink); }
+    .navlinks { display: flex; gap: 22px; flex-wrap: wrap; font-size: .92rem; }
+    .navlinks a { color: var(--muted); }
+    .hero { padding: 100px 0 88px; background: linear-gradient(135deg, #f7f8ff 0%, #fff 65%); }
+    .eyebrow { color: var(--accent); font-weight: 700; text-transform: uppercase; letter-spacing: 1.6px; font-size: .78rem; }
+    h1 { font-size: clamp(2.5rem, 7vw, 4.7rem); line-height: 1.08; letter-spacing: -2px; margin: 15px 0 20px; }
+    .hero p { max-width: 650px; color: var(--muted); font-size: 1.12rem; }
+    .actions { display: flex; gap: 12px; flex-wrap: wrap; margin-top: 28px; }
+    .btn { display: inline-block; padding: 11px 18px; border-radius: 9px; font-weight: 700; border: 1px solid var(--accent); }
+    .btn.primary { background: var(--accent); color: white; }
+    .btn.secondary { color: var(--accent); background: white; }
+    section { padding: 72px 0; }
+    section:nth-of-type(even) { background: var(--soft); }
+    h2 { font-size: 2rem; line-height: 1.2; margin: 0 0 12px; letter-spacing: -.7px; }
+    .intro { color: var(--muted); max-width: 700px; margin: 0 0 30px; }
+    .grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 18px; }
+    .card { background: white; border: 1px solid var(--line); border-radius: 14px; padding: 22px; }
+    .card h3 { margin: 0 0 8px; font-size: 1.08rem; }
+    .card p { margin: 0; color: var(--muted); }
+    .taglist { display: flex; flex-wrap: wrap; gap: 10px; }
+    .tag { background: var(--accent-light); color: #2948b6; border-radius: 999px; padding: 7px 13px; font-size: .92rem; font-weight: 600; }
+    .timeline { border-left: 2px solid #d9e0fb; padding-left: 22px; display: grid; gap: 22px; }
+    .timeline-item { position: relative; }
+    .timeline-item:before { content: ""; position: absolute; left: -29px; top: 8px; width: 11px; height: 11px; border-radius: 50%; background: var(--accent); }
+    .timeline-item h3 { margin: 0 0 3px; }
+    .timeline-item .meta { color: var(--accent); font-size: .9rem; font-weight: 700; }
+    .timeline-item p { color: var(--muted); margin: 5px 0 0; }
+    .contact { background: #172033 !important; color: white; }
+    .contact .intro, .contact p { color: #c4ccdc; }
+    .contact a { color: white; }
+    footer { padding: 22px 0; color: var(--muted); font-size: .9rem; text-align: center; }
+    @media (max-width: 700px) {
+      nav { align-items: flex-start; flex-direction: column; padding: 14px 0; }
+      .navlinks { gap: 13px; }
+      .hero { padding: 70px 0; }
+      section { padding: 55px 0; }
+      .grid { grid-template-columns: 1fr; }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <nav class="wrap">
+      <a class="brand" href="#home">Jyoti Malakar</a>
+      <div class="navlinks">
+        <a href="#about">About</a>
+        <a href="#education">Education</a>
+        <a href="#skills">Skills</a>
+        <a href="#projects">Projects</a>
+        <a href="#experience">Experience</a>
+        <a href="#contact">Contact</a>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero" id="home">
+      <div class="wrap">
+        <div class="eyebrow">Student · Python Learner · Aspiring Developer</div>
+        <h1>Hello, I'm<br>Jyoti Malakar.</h1>
+        <p>
+          I am a commerce graduate currently pursuing M.Com and learning Python programming
+          at NavGurukul. I enjoy learning new skills, solving problems and exploring how
+          technology can create useful solutions.
+        </p>
+        <div class="actions">
+          <a class="btn primary" href="#projects">View my projects</a>
+          <a class="btn secondary" href="#contact">Contact me</a>
+        </div>
+      </div>
+    </section>
+
+    <section id="about">
+      <div class="wrap">
+        <h2>About Me</h2>
+        <p class="intro">
+          I am at the beginning of my technology journey and enjoy learning through practice.
+          Along with my commerce education, I am building my programming knowledge and
+          strengthening my communication, teamwork and problem-solving skills. I am open
+          to opportunities where I can learn, contribute and grow.
+        </p>
+      </div>
+    </section>
+
+    <section id="education">
+      <div class="wrap">
+        <h2>Education & Learning</h2>
+        <p class="intro">My academic background and current learning journey.</p>
+        <div class="timeline">
+          <div class="timeline-item">
+            <div class="meta">Currently pursuing</div>
+            <h3>Master of Commerce (M.Com)</h3>
+            <p>Shaheed Nandkumar University</p>
+          </div>
+          <div class="timeline-item">
+            <div class="meta">Completed · 2026</div>
+            <h3>Bachelor of Commerce (B.Com)</h3>
+            <p>Shaheed Nandkumar University</p>
+          </div>
+          <div class="timeline-item">
+            <div class="meta">Current learning</div>
+            <h3>Programming</h3>
+            <p>NavGurukul Organisation — learning Python and developing practical programming skills.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="skills">
+      <div class="wrap">
+        <h2>Skills</h2>
+        <p class="intro">Skills I am developing through education, practice and experience.</p>
+        <div class="taglist">
+          <span class="tag">Python (Learning)</span>
+          <span class="tag">Google Sheets</span>
+          <span class="tag">Communication</span>
+          <span class="tag">Teamwork</span>
+          <span class="tag">Leadership</span>
+          <span class="tag">Discipline</span>
+        </div>
+      </div>
+    </section>
+
+    <section id="projects">
+      <div class="wrap">
+        <h2>Projects</h2>
+        <p class="intro">A selection of my learning projects. I will add more as I build them.</p>
+        <div class="grid">
+          <article class="card">
+            <h3>Student Management System</h3>
+            <p>
+              A beginner Python console project to add student records and display the
+              students entered by the user.
+            </p>
+            <p style="margin-top:14px"><strong>Technology:</strong> Python</p>
+            <p style="margin-top:10px"><a href="https://github.com/Jyoti-919" target="_blank" rel="noopener">View project on GitHub →</a></p>
+          </article>
+        </div>
+        <p style="color:var(--muted);font-size:.9rem;margin-top:16px">
+          The GitHub link opens your profile, where visitors can explore your public repositories.
+        </p>
+      </div>
+    </section>
+
+    <section id="experience">
+      <div class="wrap">
+        <h2>Experience</h2>
+        <div class="card">
+          <div class="meta">3 months · 2025</div>
+          <h3>Karate Coach</h3>
+          <p><strong>Tamnar Kudo Association, Raigarh</strong></p>
+          <p style="margin-top:8px">
+            Supported learners through karate coaching and developed communication,
+            leadership, teamwork and discipline.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section class="contact" id="contact">
+      <div class="wrap">
+        <h2>Let's Connect</h2>
+        <p class="intro">
+          I am interested in learning opportunities, beginner-friendly projects and
+          collaborations that help me grow in technology.
+        </p>
+        <p>Email: <a href="mailto:malakarj356@gmail.com">malakarj356@gmail.com</a></p>
+        <p>GitHub: <a href="https://github.com/Jyoti-919" target="_blank" rel="noopener">github.com/Jyoti-919</a></p>
+        <p>LinkedIn: <a href="https://www.linkedin.com/in/jyoti-malakar-b04051409/" target="_blank" rel="noopener">linkedin.com/in/jyoti-malakar-b04051409</a></p>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="wrap">© 2026 Jyoti Malakar · Personal Portfolio</div>
+  </footer>
+</body>
+</html>
